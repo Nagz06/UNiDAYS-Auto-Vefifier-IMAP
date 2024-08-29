@@ -8,11 +8,9 @@ import time
 import re
 import sys
 
-# Function to print in green
 def print_green(message):
     print(f"\033[92m{message}\033[0m")
 
-# Function to print in red
 def print_red(message):
     print(f"\033[91m{message}\033[0m")
 
@@ -43,8 +41,8 @@ def register_unidays(session, edu_mail):
         "MxCheckFailureOccurred": "false",
         "EmailAddress": edu_mail,
         "ConfirmEmailAddress": edu_mail,
-        "Password": "Nagui.06",
-        "ConfirmPassword": "Nagui.06",
+        "Password": "Thepassword.06#",
+        "ConfirmPassword": "Thepassword.06#",
         "Human": "",
         "QueuedPath": "/FR/fr-FR",
         "CheckAdditionalTermsAcceptance": "False",
@@ -269,7 +267,7 @@ def process_email_password_pair(email_pass_pair):
         if final_status == 200:
             print_green(f"Final Verification Status: {final_status}")
             with open("Hits.txt", "a") as file:
-                file.write(f"{edu_mail}:Nagui.06\n")
+                file.write(f"{edu_mail}:Thepassword.06#\n")
         else:
             print_red(f"Final Verification Status: {final_status} - {final_response}")
     else:
