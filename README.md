@@ -11,8 +11,9 @@ This script is provided for educational purposes only. The author does not endor
 - Email verification handling through IMAP.
 - Secure session management with `requests`.
 
-## Security Notice
-Users are strongly advised not to store or share credentials in plain text. Follow best practices for secure handling of sensitive information.
+## Before starting
+- Don't forget to update the IMAP server on both fonction 
+- Don't forget to update the InstitutionID according to IMAP your using
 
 ## Educational Context
 This project is a practical example of web automation and email interaction in Python. It can serve as a learning tool for those interested in:
